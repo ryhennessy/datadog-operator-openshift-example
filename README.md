@@ -12,7 +12,7 @@ Install the Datadog operator (non community version) taking all the defaults inc
 
 Clone this repository to your local computer so that you can make the necessary changes to the SCC's and deployment files.
 
-Create a namespace/project for the Datadog agent installation.   This document assumes that the namespace/project will be "datadog" but the name can be whatever you choose.
+Create a namespace/project for the Datadog agent installation.   This document assumes that the namespace/project will be "datadog" but the name can be whatever you choose.  *If you choose to use a different namespace/project, the scc and deployment configuration files will need to be updated with that project name.*
 
 ```
 oc new-project datadog
