@@ -18,7 +18,7 @@ Create a namespace/project for the Datadog agent installation.   This document a
 oc new-project datadog
 ```
 
-You will also need to deploy a SCC for the agent to have all the rights needed to monitor the OpenShift cluster.   The provided SCC yaml file included in this repository sets up the "custom" deployment scenario that is described in more detail in the [Datadog OpenShift documentation page](https://docs.datadoghq.com/integrations/openshift/#configuration).  If "custom" deployment is the scenario you wish to deploy you can apply this configuration without any modification.   If you want to apply a more restricted deployment you can modify the provided SCC yaml file.    To deploy the repository provided SCC configuration file located [here](needlink) run the following commands.
+You will also need to deploy a SCC for the agent to have all the rights needed to monitor the OpenShift cluster.   The provided SCC yaml file included in this repository sets up the "custom" deployment scenario that is described in more detail in the [Datadog OpenShift documentation page](https://docs.datadoghq.com/integrations/openshift/#configuration).  If "custom" deployment is the scenario you wish to deploy you can apply this configuration without any modification.   If you want to apply a more restricted deployment you can modify the provided SCC yaml file.    To deploy the repository provided SCC configuration file located [here](https://github.com/ryhennessy/datadog-operator-openshift-example/blob/master/scc.yaml) run the following commands.
 
 Change to the namespace project you created for the Datadog agent install
 ```
@@ -31,7 +31,7 @@ oc apply -f scc.yaml
 ```
 
 ### Modifying the default configuration provided with this repository
-Included in this repository is an example deployment file located [here](linkneed).
+Included in this repository is an example deployment file located [here](https://github.com/ryhennessy/datadog-operator-openshift-example/blob/master/datadog-operator.yaml).
 You will need to modify the a few parameters to set up the agent.   As suggested above, it is best to clone this repository to your local computer and make the required modifications there.
 
 The only **required** changes to agent deployment file are to provide the unique API and App key for your Datadog account.  They need to be supplied in the following parameters:
