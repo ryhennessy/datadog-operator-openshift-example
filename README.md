@@ -87,4 +87,19 @@ oc get all
 
 
 #### Via the Web Console:
-*screenshots coming soon*
+Navigate to **Installed Operators** and validate that you have your Datadog project selected in the project selector at the top.   You should see the Datadog Operator listed.  If you do not find the operator listed, install it via the OperatorHub.
+
+![Installed Operator View](images/installed-operator.png)
+
+
+To create a new deployment of the Datadog agent, click on the Datadog Operator and then choose the **Datadog Agent** tab in the operator dialog.   From there you need to click on the **Create DAtadogAgent** button.
+
+![Create Operand View](images/create-operand.png)
+
+This will launch an editor with a default deployment YAML file.   Remove this default deployment YAML and replace it with the modified YAML that was created by following the directions above.  
+
+![example-operand-yaml-dialog](images/operand-yaml.png)
+
+After clicking the **create** button you will be brought back to the Datadog Operator dialog.  The console should now list the installed agent deployment.   
+
+![Running Agent Deployment](images/running-agent.png)
