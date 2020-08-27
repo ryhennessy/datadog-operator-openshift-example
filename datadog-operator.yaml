@@ -11,6 +11,7 @@ spec:
       name: "datadog/agent:latest"
     config:
       leaderElection: true
+      collectEvents: true
       criSocket:
         criSocketPath: /var/run/crio/crio.sock
         useCriSocketVolume: true
