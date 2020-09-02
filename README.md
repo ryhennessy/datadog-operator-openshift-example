@@ -8,7 +8,13 @@ If you have any questions or issues please post them in the issues section of th
 ### Initial Configuration
 This document assumes you have installed the Datadog operator via the processes described [here](https://access.redhat.com/documentation/en-us/openshift_container_platform/4.5/html-single/operators/index#olm-installing-operators-from-operatorhub_olm-adding-operators-to-a-cluster).
 
-Install the Datadog operator (non community version) taking all the defaults including to install the operator in "All Namespaces in the cluster(default)"
+Install the Datadog operator (non community version)
+
+![Search for Datadog](images/operator_page_1.png)
+
+Use all the defaults; install the operator in "All Namespaces in the cluster"
+
+![Install Datadog Defafults](images/operator_page_2.png)
 
 Clone this repository to your local computer so that you can make the necessary changes to the SCC's and deployment files.
 
