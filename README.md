@@ -1,5 +1,7 @@
 # Setting up the Datadog Agent via the operator.
 
+[![IaC](https://app.soluble.cloud/api/v1/public/badges/53ab2914-f2f6-4121-9df7-7a9d63fbd858.svg)](https://app.soluble.cloud/repos/details/github.com/ryhennessy/datadog-operator-openshift-example)  
+
 ### Intro
 This repository includes information on deploying the Datadog Agent via the operator hosted in the Operator Hub.
 Included are example configurations for the operator deployment.
